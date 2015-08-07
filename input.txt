@@ -1,0 +1,105 @@
+<group>
+        <image name="checkerboard" path="checkerboard.jpg"></image>
+	<image name="white" path="white.png"></image>
+	<image name="earth" path="earthmap.jpg"></image>
+
+	<light>
+			<position> 0 200 200 </position>
+			<ambient> 0.4 0.4 0.4 </ambient>
+			<diffuse> 0.5 0.5 0.5 </diffuse>
+			<specular> 0.5 0.5 0.5 </specular>
+	</light>
+
+	<light>
+			<position> 400 200 -100 </position>
+			<ambient> 0.4 0.4 0.4 </ambient>
+			<diffuse> 0.5 0.5 0.5 </diffuse>
+			<specular> 0.5 0.5 0.5 </specular>
+	</light>
+
+	<plane>
+		<transform>
+			<scale> 200 200 200 </scale>
+		</transform>
+		<material>
+			<ambient> 0.1 0.1 0.1 </ambient>
+			<diffuse> 0.4 0.4 0.4 </diffuse>
+			<specular> 0.4 0.4 0.4 </specular>
+			<shininess> 10 </shininess>
+			<absorption> 1 </absorption>
+			<reflection> 0 </reflection>
+			<transparency> 0 </transparency>
+			<texture name="checkerboard"></texture>
+		</material>		
+	</plane>
+
+        <sphere>
+		<transform>
+			<scale> 30 30 30 </scale>
+                        <translate> 0 30 -30 </translate>
+		</transform>
+		<material>
+			<ambient> 0 0 0 </ambient>
+			<diffuse> 0.5 0.419 0 </diffuse>
+			<specular> 1 0.838 0 </specular>
+			<shininess> 100 </shininess>
+                        <absorption> 0.3 </absorption>
+                        <reflection> 0.7 </reflection>
+                        <transparency> 0 </transparency>
+		</material>
+                <texture name="white"></texture>
+	</sphere>
+
+	<sphere>
+		<transform>
+			<scale> 30 30 30 </scale>
+			<translate> -70 30 0 </translate>
+		</transform>
+		<material>
+			<ambient> 0 0 0 </ambient>
+			<diffuse> 0.5 0.5 0.5 </diffuse>
+			<specular> 1 1 1 </specular>
+			<shininess> 300 </shininess>
+			<absorption> 0.3 </absorption>
+			<reflection> 0.7 </reflection>
+                        <transparency> 0 </transparency>
+		</material>
+		<texture name="white"></texture>
+	</sphere>
+
+
+	<sphere>
+		<transform>
+			<scale> 30 30 30 </scale>
+                        <translate> 70 30 0 </translate>
+		</transform>
+		<material>
+			<ambient> 0.3 0.3 0.3 </ambient>
+			<diffuse> 0.7 0.7 0.7 </diffuse>
+			<specular> 1 1 1 </specular>
+			<shininess> 100 </shininess>
+                        <absorption> 0.3 </absorption>
+                        <reflection> 0.7 </reflection>
+			<transparency> 0 </transparency>
+                        <texture name="white"></texture>
+		</material>
+	</sphere>
+
+        <sphere>
+                <transform>
+                        <scale> 40 40 40 </scale>
+                        <translate> 0 30 50 </translate>
+                </transform>
+                <material>
+                                        <ambient> .8 .3 0 </ambient>
+                                        <diffuse> .8 .3 0 </diffuse>
+                                        <specular> 1 1 1 </specular>
+                                        <shininess> 100 </shininess>
+                                        <absorption> 0.3 </absorption>
+                                        <reflection> 0.7 </reflection>
+                                        <transparency> 0 </transparency>
+                                        <texture name="white"></texture>
+                </material>
+
+        </sphere> 
+</group>
